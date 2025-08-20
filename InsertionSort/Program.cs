@@ -8,11 +8,9 @@ namespace InsertionSort
     {
         static int[] InsertionSort(int[] unsortedElements)
         {
-            for (int i = 0; i < unsortedElements.Length; i++)
-            {
+            for (int i = 0; i < unsortedElements.Length; i++) {
                 int j = i;
-                while (j > 0 && unsortedElements[j] < unsortedElements[j - 1])
-                {
+                while (j > 0 && unsortedElements[j] < unsortedElements[j - 1]) {
                     int temp = unsortedElements[j];
                     unsortedElements[j] = unsortedElements[j - 1];
                     unsortedElements[j - 1] = temp;
