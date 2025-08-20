@@ -25,8 +25,12 @@ namespace InsertionSort
         {
             int[] unsortedElements = { 5, 12, 3, 8, 1, 19, 7, 14, 
                 2, 10, 16, 4, 11, 6, 18, 9, 13, 17, 0, 15 };
+            Console.Write("Unsorted Elements: ");
+            foreach (int element in unsortedElements) {
+                Console.Write(element + " ");
+            }
             int[] sortedArray = InsertionSort(unsortedElements);
-            Console.Write("Sorted Elements: ");
+            Console.Write("\nSorted Elements: ");
             foreach (int element in sortedArray) {
                 Console.Write(element + " ");
             }
